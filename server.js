@@ -22,7 +22,7 @@ app.post('/upload', upload.single('file'), (req, res) => {
 
 // Serve HTML
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '/public/index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
